@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <main class="main">
+        <header class="header">
+            <a href="#" class="logo">PAUL'S JS QUIZ</a>
+
+
+            <nav class="navbar">
+                <a href="#">Home</a>
+                 <a href="#">About</a>
+                  <a href="#">Services</a>
+                   <a href="#">Contact</a>
+                
+            </nav>
+        </header>
+
+
+        <div class="container">
+            <section class="quiz-section">
+                <div class="quiz-box">
+                    <h1>PAUL'S JS QUIZ</h1>
+                    <div class="quiz-header">
+                        <!-- <span>Quiz website tutorials</span> -->
+                        <span class="header-score">Score: 0/10</span>
+                        <div class="timer">
+                            <span class="timer">Time Left:</span>
+                            <span class="time-sec">00:00</span>
+                        </div>
+                    </div>
+                    <h2 class="question-text">What is hoisting in JavaScript?</h2>
+
+                    <div class="option-list">
+                        <!-- <div class="option">
+                            <span>A. Function initialization</span>
+                        </div>
+                        <div class="option">
+                            <span>B. Variable lifting to top</span>
+                        </div>
+                        <div class="option">
+                            <span>C. Looping </span>
+                        </div>
+                        <div class="option">
+                            <span>D. Data sorting</span>
+                        </div> -->
+                    </div>
+
+                    <div class="quiz-footer">
+                        <span class="question-total">
+                            1 of 10 question
+                        </span>
+                        <button class="next-btn">NEXT</button>
+                    </div>
+        
+                </div>
+                <div class="result-box">
+                    <h1>Quiz Result</h1>
+                    <div class="percentage-container">
+                        <div class="circular-progress">
+                            <span class="progress-value">0%</span>
+
+                        </div>
+
+                        <span class="score-text">Your Score 0 out of 5</span>
+                    </div>
+                    <div class="buttons">
+                        <button class="restart-btn">Restart Quiz</button>
+                        <button class="go-home-btn">Go to Home</button>
+                    </div>
+                </div>
+
+
+            </section>
+        
+
+        <section class="home">
+            <div class="home-content">
+                <h1>Quiz Website</h1>
+                <p> <b>Test Your JS Superpowers! ⚡</b><br>
+
+Are you ready to put your JavaScript skills to the test? Start Quiz for an electrifying JavaScript Quiz Tutorial where knowledge meets speed and wit! Whether you're a seasoned coder or just starting out, this Quiz is a perfect way to challenge yourself and learn something new.</p>
+                <button class="start-btn">Start Quiz</button>
+            </div>
+        </section>
+        
+        </div>
+   
+
+    </main>
+
+    <div class="popup-info">
+        <h2>Quiz Guide</h2>
+        <span class="info">1. You will have only <span>10 seconds</span> per each question.</span><br>
+        <span class="info">2. Once you select your answer, It can't be undone.</span><br>
+        <span class="info">3. You can't select any option once time goes off.</span><br>
+        <span class="info">4. You can't exit from the Quiz as soon as you click continue</span><br>
+        <span class="info">5. You'll get your percentage result at the end of the Quiz</span><br>
+        
+        <div class="btn-group">
+            <button class="info-btn exit-btn">Exit Quiz</button>
+            <a href="#" class="info-btn continue-btn">Continue</a>
+        </div>
+    </div>
+
+    
+
+
+
+    <script src="script.js"></script>
+    <script src="question.js"></script> 
+</body>
+</html>
