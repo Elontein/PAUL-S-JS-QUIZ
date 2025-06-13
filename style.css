@@ -35,6 +35,15 @@ body{
     filter: drop-shadow(0 0 5px rgb(37, 30, 30));
 
 }
+#menu-bar{
+    display: none;
+}
+.header label{
+    display: none; 
+    font-size: 20px;
+    color: rgb(186, 192, 197);
+    cursor: pointer;
+}
 
 .navbar a{
     font-size: 20px;
@@ -43,6 +52,7 @@ body{
     font-weight: 500;
     margin-left: 50px;
     transition: .3s;
+    
 }
 .navbar a:hover, 
 .navbar a.active{
@@ -418,12 +428,33 @@ body{
     .logo{
         font-size: 30px;
     }
+    .header label{
+        display: initial; 
+    }
+     .header .navbar{
+        position: absolute;
+        text-align:  auto; 
+        top: 100%; left: 0;right: 0;
+        border: 1px solid  rgba(225, 225, 255, .1);
+        display: none;   
+    }
+   
+    #menu-bar:checked ~ .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        position: absolute;
+        padding: 5px 20px;
+        background-color: rgba(255, 255, 255, 0.2); 
+    }
     .navbar a{
         font-size: 16px;
         margin-left: 20px;
+         width: 50%;
     }
     .home-content h1{
-        font-size: 50px;
+        font-size: 45px;
     }
     .home-content p{
         font-size: 16px;
@@ -503,14 +534,45 @@ body{
 }
 @media screen and (max-width: 480px) {
     .header{
-        padding: 15px;
+        padding: 25px;
     }
     .logo{
         font-size: 15px;
     }
+
+    .header label{
+        display: initial;
+    }
+    #menu-bar:checked ~ .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        position: absolute;
+        padding: 5px 10px;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    .navbar{
+        position: absolute;
+        text-align:  auto;
+        top: 100%; left: 0;right: 0;
+        border: 1px solid  rgba(225, 225, 255, .1);
+        display: none;
+    }
+    #menu-bar:checked ~ .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        position: absolute;
+        padding: 5px 10px;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+   
     .navbar a{
         font-size: 14px;
         margin-left: 15px;
+        width: 100%;
     }
     .home-content h1{
         font-size: 40px;
