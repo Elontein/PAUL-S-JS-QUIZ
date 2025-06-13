@@ -422,6 +422,13 @@ body{
 }
 
 @media screen and (max-width: 768px) {
+    body{
+    background: rgb(37, 30, 30);
+    color: white;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+    }
     .header{
         padding: 20px;
     }
@@ -533,6 +540,13 @@ body{
     
 }
 @media screen and (max-width: 480px) {
+    body{
+    background: rgb(37, 30, 30);
+    color: white;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+    }
     .header{
         padding: 25px;
     }
